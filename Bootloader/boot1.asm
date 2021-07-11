@@ -12,7 +12,7 @@ boot:
 
     or al,al ; asking if the register al == 0
 
-    jz halt  ; if (al == 0) jump to halt label
+    jz halt  ; js = jump to zero, if (al == 0) jump to halt label
 
     int 0x10 ; runs BIOS interrupt 0x10 - Video Services
 
