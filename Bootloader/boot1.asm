@@ -8,7 +8,7 @@ boot:
     mov ah,0x0e ; 0x0e means 'Write Character in TTY mode'
 
 .loop:
-    lodsb
+    lodsb  ;loads the byte addressed by SI into register AL
 
     or al,al ; asking if the register al == 0
 
