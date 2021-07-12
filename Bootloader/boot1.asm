@@ -3,7 +3,7 @@ bits 16 ; tell NASM this is 16 bit code
 org 0x7c00 ; tell NASM to start outputting stuff at offset 0x7c00
 
 boot:
-    mov si, ; point si register to hello label memory location
+    mov si,hello ; point si register to hello label memory location
 
     mov ah,0x0e ; 0x0e means 'Write Character in TTY mode'
 
